@@ -1,61 +1,59 @@
-# AI Product Ops Research Agent & Case Study
+# AI Agent Toolkit & API Gating Intelligence Platform
 
-This repository contains the automated research pipeline, dataset, and interactive case study dashboard designed to analyze 100 enterprise apps for auth mechanics, self-serve credentials access, and buildability metrics for AI agent toolkits (MCP servers/Composio).
+> **Author**: Milan Tiwari | **Domain**: [milantiwri.in](https://milantiwri.in) | **Live Platform**: [apps.milantiwri.in](https://apps.milantiwri.in)
 
-## 🚀 Deployed Case Study Dashboard
-The final research results are built into a premium, responsive web app:
-* **Interactive Matrix**: [index.html](index.html) (Search, filter, and view detailed developer notes for all 100 apps).
+An automated research engine, dataset, and interactive intelligence platform designed to analyze 100 enterprise SaaS applications for auth mechanics, self-serve developer credential access, API surface scope, and buildability metrics for AI agent toolkits (Model Context Protocol / Composio).
 
 ---
 
-## 🛠️ Project Structure
-* `research_agent.py`: The Python research agent that reads apps from the assignment sheet and queries the Gemini API with structured outputs and exponential retry logic.
-* `validator.py`: Automated validation script checking link status codes and logical contradictions.
-* `fix_links.py`: Data cleaning script executing verification corrections based on validation reports.
-* `apps_research_v2.json`: The final, validated 100-app dataset.
-* `index.html`: Sleek dark-mode web dashboard visualizing patterns, metrics, process charts, and the interactive dataset.
+## 🌐 Live Platform & Interactive Matrix
+Explore the live interactive dashboard, category filters, and detailed developer notes:
+* ⚡ **Live Web Platform**: [apps.milantiwri.in](https://apps.milantiwri.in)
+
+---
+
+## 🛠️ Repository Architecture
+* `index.html`: Sleek, responsive dark-mode dashboard with Client-Side Search, Category Filtering, Chart.js Visualizations, and Modal Deep-Dives.
+* `apps_research_v2.json`: Final validated dataset covering 100 enterprise apps across 10 verticals.
+* `research_agent.py`: Python research agent executing structured Pydantic model outputs via the Gemini API with exponential backoff retries.
+* `validator.py`: Automated validation suite performing HTTP HEAD/GET status code checks (200 OK) and logical consistency assertions.
+* `fix_links.py`: Data cleaning pipeline resolving broken/outdated documentation paths.
 
 ---
 
 ## ⚙️ How to Run the Research Agent
 
 ### 1. Install Dependencies
-Make sure you have Python 3.10+ installed. Install the required libraries using pip:
 ```bash
 pip3 install google-genai pydantic requests
 ```
 
-### 2. Configure the Gemini API Key
-Obtain an API key from [Google AI Studio](https://aistudio.google.com/) and export it to your environment variables:
+### 2. Set Up Gemini API Key
 ```bash
 export GEMINI_API_KEY="your-gemini-api-key"
 ```
 
 ### 3. Run the Research Agent
-Run the main script. You can run it on the whole set of 100 apps, or process specific ranges using slices:
 ```bash
-# Run on all 100 apps (default)
+# Process all 100 apps with automatic resume & rate-limit backoff
 python3 research_agent.py
 
-# Run a specific range (e.g., apps 1 to 25) saving to a custom part file
+# Process specific sub-ranges
 python3 research_agent.py --start 1 --end 25 --output apps_part1.json
 ```
-The script features **automatic resuming** and skips any already parsed items. It also handles API rate limits (`429 RESOURCE_EXHAUSTED`) using exponential backoff retries.
 
-### 4. Run the Data Validation Suite
-Verify data integrity, check for logical conflicts, and test all documentation links for live status codes (200 OK):
+### 4. Execute the Validation Suite
 ```bash
 python3 validator.py
 ```
-This writes a summary of flagged items (e.g., broken URLs) to `validation_report.md`.
 
 ---
 
-## 📊 Summary of Findings
+## 📊 Summary Metrics
 
-* **Total Apps Analysed**: 100
-* **Build-Ready (Instant API Access)**: 82%
-* **Blocked (Gated/Paid Account required)**: 16%
-* **Feasible (Manual approval/Setup required)**: 2%
-* **Dominant Auth Types**: Bearer Token (67%), OAuth2 (56%), API Key (47%)
-* **MCP Integration Exists**: 80% (80 apps have active Composio tools or community MCP configurations)
+* **Apps Analyzed**: 100 enterprise SaaS platforms across 10 industry categories
+* **Build-Ready (Instant Self-Serve Credentials)**: 82%
+* **Blocked (Enterprise Gating / Partner Program required)**: 16%
+* **Feasible (Manual Setup / Custom Tokens)**: 2%
+* **Dominant Auth Standards**: Bearer Tokens (67%), OAuth 2.0 (56%), API Keys (47%)
+* **MCP / Agent Toolkit Compatibility**: 80%
