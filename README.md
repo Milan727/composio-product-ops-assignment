@@ -1,6 +1,6 @@
-# AI Agent Toolkit & API Gating Intelligence Platform
+# API Matrix — AI Agent Developer Surface & Gating Intelligence
 
-> **Author**: Milan Tiwari | **Domain**: [milantiwari.in](https://milantiwari.in) | **Live Platform**: [milantiwari.in/projects](https://milantiwari.in/projects)
+> **Author**: Milan Tiwari | **Domain**: [milantiwari.in](https://milantiwari.in) | **Live Platform**: [milantiwari.in/api-matrix](https://milantiwari.in/api-matrix)
 
 An automated research engine, dataset, and interactive intelligence platform designed to analyze 100 enterprise SaaS applications for auth mechanics, self-serve developer credential access, API surface scope, and buildability metrics for AI agent toolkits (Model Context Protocol / Composio).
 
@@ -8,7 +8,7 @@ An automated research engine, dataset, and interactive intelligence platform des
 
 ## 🌐 Live Platform & Interactive Matrix
 Explore the live interactive dashboard, category filters, and detailed developer notes:
-* ⚡ **Live Web Platform**: [milantiwari.in/projects](https://milantiwari.in/projects)
+* ⚡ **Live Web Platform**: [milantiwari.in/api-matrix](https://milantiwari.in/api-matrix)
 
 ---
 
